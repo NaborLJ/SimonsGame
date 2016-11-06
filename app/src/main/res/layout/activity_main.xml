@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nlopezjimenez.simon.MainActivity">
+
+
+    <Button
+        android:text="Start"
+        android:background="#ffc266"
+        android:onClick="StartEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/buttonStart"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonRed"
+        android:background="#ff4d4d"
+        android:onClick="RedEvent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/buttonStart"
+        android:layout_alignRight="@+id/buttonStart"
+        android:layout_alignEnd="@+id/buttonStart"
+        android:layout_marginRight="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:id="@+id/buttonBlue"
+        android:background="#33ccff"
+        android:onClick="BlueEvent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/buttonRed"
+        android:layout_alignLeft="@+id/buttonStart"
+        android:layout_alignStart="@+id/buttonStart"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp" />
+
+    <Button
+        android:id="@+id/buttonYellow"
+        android:background="#ffff4d"
+        android:onClick="YellowEvent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/buttonGreen"
+        android:layout_alignLeft="@+id/buttonBlue"
+        android:layout_alignStart="@+id/buttonBlue" />
+
+    <Button
+        android:id="@+id/buttonGreen"
+        android:background="#b3ff1a"
+        android:onClick="GreenEvent"
+        android:layout_below="@+id/buttonRed"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/buttonRed"
+        android:layout_alignStart="@+id/buttonRed"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonYellow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:id="@+id/textView" />
+
+
+</RelativeLayout>
